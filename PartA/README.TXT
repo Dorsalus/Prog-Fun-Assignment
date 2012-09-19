@@ -10,3 +10,4 @@ VERSION or DATE:
 HOW TO START THIS PROJECT:
 AUTHORS:
 USER INSTRUCTIONS:
+Files for Programming Fundamentals Assignment 1, split into Part A and Part B
