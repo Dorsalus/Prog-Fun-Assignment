@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Player()
+comment1.params=
+comment1.target=java.lang.String\ toString()
+comment2.params=armies\ territory
+comment2.target=void\ placeArmies(int,\ Territory)
+numComments=3
