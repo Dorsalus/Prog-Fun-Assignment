@@ -36,11 +36,30 @@ public class World
 
     public void placeArmies(Player player)
     {
-        System.out.println("You have " + player.getUnplacedArmies() + " to place.");
+        Territory territory;
+        System.out.println("You have " + player.getUnplacedArmies() + " armies to place.");
         System.out.println(this);
-        System.out.print("Select a Territory: ");
-        int column = keyboard.nextInt();
-        int row = keyboard.nextInt();
+        do {
+            System.out.print("Select a Territory: ");
+            int column = keyboard.nextInt();
+            int row = keyboard.nextInt();
+
+            if (column == 0 && row == 0){
+                territory = territory1;
+                player.placeArmies(territory);}
+            else if (column == 1 && row == 0){
+                territory = territory2;
+                player.placeArmies(territory);}
+            else if (column == 0 && row == 1){
+                territory = territory3;
+                player.placeArmies(territory);}
+            else if (column == 1 && row == 1){
+                territory = territory4;
+                player.placeArmies(territory);}
+            System.out.println(this);
+           
+        } while (player.getUnplacedArmies() != 0);
+        
     }
 
  

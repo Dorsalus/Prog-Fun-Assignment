@@ -16,9 +16,9 @@ public class Territory
         return "[" + column + "," + row + "]" + owner + "(" + armies + ")";
     }
 
-    public void placeArmies(Player owner, int armies)
+    public void placeArmies(Player owner)
     {
         this.owner = owner;
-        this.armies += armies;
+        this.armies += 1;
     }
 }

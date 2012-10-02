@@ -22,9 +22,9 @@ public class Player
         return unplacedArmies;
     }
 
-    public void placeArmies(int armies, Territory territory)
+    public void placeArmies(Territory territory)
     {
-        unplacedArmies -= armies;
-        territory.placeArmies(this, armies);
+        unplacedArmies -= 1;
+        territory.placeArmies(this);
     }
 }
