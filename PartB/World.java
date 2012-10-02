@@ -43,15 +43,5 @@ public class World
         int row = keyboard.nextInt();
     }
 
-    public void run()
-    {
-        System.out.println(player1 + ", please place your armies");
-        System.out.println(this);
-        placeArmies(player1, territory1);
-        placeArmies(player1, territory2);
-        System.out.println(player2 + ", please place your armies");
-        System.out.println(this);
-        placeArmies(player2, territory3);
-        placeArmies(player2, territory4);
-    }
+ 
 }
