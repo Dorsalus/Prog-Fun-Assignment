@@ -15,7 +15,10 @@ public class Territory
     {
         return "[" + column + "," + row + "]" + owner + "(" + armies + ")";
     }
-
+    public Player getOwner()
+    {
+        return owner;
+    }
     public void placeArmies(Player owner)
     {
         this.owner = owner;
