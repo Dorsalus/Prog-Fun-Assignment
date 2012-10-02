@@ -16,6 +16,11 @@ public class Player
     {
         return name;
     }
+    
+    public int getUnplacedArmies()
+    {
+        return unplacedArmies;
+    }
 
     public void placeArmies(int armies, Territory territory)
     {

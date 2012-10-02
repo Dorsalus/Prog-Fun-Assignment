@@ -26,12 +26,21 @@ public class World
         return territory1 + " " + territory2 + " " + territory3 + " " + territory4;
     }
 
-    public void placeArmies(Player player, Territory territory)
+//     public void placeArmies(Player player, Territory territory)
+//     {
+//         System.out.print("How many armies would you like to place on " + territory + "? ");
+//         int armies = keyboard.nextInt();
+//         player.placeArmies(armies, territory);
+//         System.out.println(this);
+//     }
+
+    public void placeArmies(Player player)
     {
-        System.out.print("How many armies would you like to place on " + territory + "? ");
-        int armies = keyboard.nextInt();
-        player.placeArmies(armies, territory);
+        System.out.println("You have " + player.getUnplacedArmies() + " to place.");
         System.out.println(this);
+        System.out.print("Select a Territory: ");
+        int column = keyboard.nextInt();
+        int row = keyboard.nextInt();
     }
 
     public void run()
